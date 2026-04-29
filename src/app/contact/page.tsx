@@ -50,7 +50,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Email Us",
-    value: "Exploreit21@gmail.com",
+    value: "exploreit21@gmail.com",
   },
   {
     icon: (
