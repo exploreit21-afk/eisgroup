@@ -114,13 +114,13 @@ export default function AboutPage() {
                 Our Story
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl text-slate-900 mb-5 leading-tight">
-                A Decade of Service to Rajasthan
+                A Decade of Service to India
               </h2>
               <div className="space-y-4 text-sm sm:text-base leading-relaxed text-slate-800/70">
                 <p>
                   Founded over ten years ago, Explore IT Services Pvt Ltd began
                   with a simple vision — to bring the benefits of government
-                  programmes closer to rural and urban communities in Rajasthan.
+                  programmes closer to rural and urban communities in India.
                   What started as a small E-Mitra centre has grown into a
                   comprehensive service hub spanning digital governance, skill
                   training, and vehicle fitness testing.
@@ -180,10 +180,10 @@ export default function AboutPage() {
                 Our Vision
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-slate-800/65">
-                To become Rajasthan&apos;s most trusted bridge between
-                government services and citizens — ensuring that no community is
-                left behind in accessing the benefits and opportunities provided
-                by the state and central government.
+                To become India&apos;s most trusted bridge between government
+                services and citizens — ensuring that no community is left
+                behind in accessing the benefits and opportunities provided by
+                the state and central government.
               </p>
             </motion.div>
 

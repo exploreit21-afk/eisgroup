@@ -155,7 +155,6 @@ export default function Navbar() {
                           }`}
                         >
                           {link.label}
-                          <span className="text-xs text-slate-400">/</span>
                         </Link>
                       </motion.div>
                     ))}

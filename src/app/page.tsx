@@ -73,12 +73,12 @@ const reasons = [
   {
     num: "01",
     title: "Government Authorised",
-    desc: "Officially registered and authorised service provider under Rajasthan state programs.",
+    desc: "Officially registered and authorised service provider under state and central government programs.",
   },
   {
     num: "02",
     title: "10+ Years Experience",
-    desc: "A decade of trusted service delivery to thousands of citizens across the state.",
+    desc: "A decade of trusted service delivery to thousands of citizens across the country.",
   },
   {
     num: "03",
@@ -280,7 +280,7 @@ export default function HomePage() {
           <SectionHeading
             label="Why Choose Us"
             title="A Decade of Trusted Service"
-            description="We've built our reputation on reliability, transparency, and an unwavering commitment to the people of Rajasthan."
+            description="We've built our reputation on reliability, transparency, and an unwavering commitment to the people of India."
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
