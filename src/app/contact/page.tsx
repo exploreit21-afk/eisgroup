@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import SmartImage from "@/components/SmartImage";
 
 const contactInfo = [
   {
@@ -74,12 +74,13 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="relative mt-16 lg:mt-20 py-14 sm:py-16 lg:py-20 grain-overlay overflow-hidden">
-        <Image
+        <SmartImage
           src="/hero-contact-us.png"
           alt="Customer support executive ready to assist"
           fill
           priority
           className="object-cover object-center"
+          placeholderClassName="bg-slate-300/35 animate-pulse"
         />
         <div className="absolute inset-0 bg-linear-to-r from-slate-950/75 via-slate-900/55 to-slate-900/25" />
         <div className="absolute inset-0 pointer-events-none">
@@ -153,13 +154,14 @@ export default function ContactPage() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="mt-8 rounded-2xl overflow-hidden border border-sand-200 shadow-sm"
               >
-                <Image
+                <SmartImage
                   src="/cotact-info.png"
                   alt="Support representative helping customer online"
                   width={1200}
                   height={675}
                   className="h-auto w-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 32vw"
+                  placeholderClassName="bg-slate-200/70 animate-pulse"
                 />
               </motion.div>
             </div>

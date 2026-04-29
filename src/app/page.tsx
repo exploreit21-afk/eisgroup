@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
+import SmartImage from "@/components/SmartImage";
 
 const servicesOverview = [
   {
@@ -106,12 +106,13 @@ export default function HomePage() {
     <>
       {/* ——— HERO ——— */}
       <section className="relative mt-16 lg:mt-20 min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] flex items-center overflow-hidden">
-        <Image
+        <SmartImage
           src="/hero-section-image.png"
           alt="Citizens receiving government assistance at Seva services center"
           fill
           priority
           className="object-cover object-center"
+          placeholderClassName="bg-slate-300/35 animate-pulse"
         />
         <div className="absolute inset-0" />
         <div className="absolute inset-0 bg-linear-to-r from-slate-950/75 via-slate-900/45 to-transparent" />
@@ -210,12 +211,13 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
               className="relative lg:col-span-5 overflow-hidden rounded-3xl border border-sand-200 min-h-[300px] sm:min-h-[380px] lg:min-h-full"
             >
-              <Image
+              <SmartImage
                 src="/services-section-image.png"
                 alt="Collage showing E-Mitra services, RSLDC training, vehicle fitness, and PMKVY courses"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
+                placeholderClassName="bg-slate-200/70 animate-pulse"
               />
               <div className="absolute inset-0 bg-linear-to-t from-slate-900/45 via-slate-900/10 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 rounded-xl bg-white/90 backdrop-blur-sm px-4 py-3">

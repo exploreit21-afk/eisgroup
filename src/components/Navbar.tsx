@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import SmartImage from "./SmartImage";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -48,12 +48,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 overflow-hidden rounded-lg transition-transform group-hover:scale-105">
-              <Image
+              <SmartImage
                 src="/company-logo.png"
                 alt="EXPLORE IT SERVICES PVT LTD logo"
                 width={48}
                 height={48}
                 className="h-full w-full object-cover"
+                placeholderClassName="bg-slate-200/80"
               />
             </div>
             <span className="font-heading text-[13px] sm:text-sm leading-5 text-slate-900 tracking-wide uppercase">

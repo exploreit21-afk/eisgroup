@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
+import SmartImage from "@/components/SmartImage";
 
 const values = [
   {
@@ -66,12 +66,13 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative mt-16 lg:mt-20 py-14 sm:py-16 lg:py-20 grain-overlay overflow-hidden">
-        <Image
+        <SmartImage
           src="/hero-about-us.png"
           alt="Seva services team standing together outside office"
           fill
           priority
           className="object-cover object-center"
+          placeholderClassName="bg-slate-300/35 animate-pulse"
         />
         <div className="absolute inset-0 bg-linear-to-r from-slate-950/75 via-slate-900/55 to-slate-900/25" />
         <div className="absolute inset-0 pointer-events-none">
@@ -141,12 +142,13 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="relative rounded-2xl overflow-hidden border border-sand-200 shadow-sm aspect-4/3"
             >
-              <Image
+              <SmartImage
                 src="/our-story.png"
                 alt="Traditional citizen connecting digitally through Seva services"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 45vw"
+                placeholderClassName="bg-slate-200/70 animate-pulse"
               />
             </motion.div>
           </div>
@@ -224,13 +226,14 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="relative mt-8 overflow-hidden rounded-2xl border border-sand-200 shadow-sm"
           >
-            <Image
+            <SmartImage
               src="/our-mission.png"
               alt="Skill training session that reflects our mission to empower youth"
               width={1400}
               height={900}
               className="h-auto w-full object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 92vw, 1200px"
+              placeholderClassName="bg-slate-200/70 animate-pulse"
             />
           </motion.div>
         </div>
@@ -252,13 +255,14 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="relative mb-8 overflow-hidden rounded-2xl border border-sand-200 shadow-sm"
           >
-            <Image
+            <SmartImage
               src="/core-value.png"
               alt="Community support moment reflecting trust and care"
               width={1400}
               height={900}
               className="h-auto w-full object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 92vw, 1200px"
+              placeholderClassName="bg-slate-200/70 animate-pulse"
             />
           </motion.div>
 

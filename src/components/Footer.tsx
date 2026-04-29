@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SmartImage from "./SmartImage";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -27,12 +27,13 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 overflow-hidden rounded-lg">
-                <Image
+                <SmartImage
                   src="/company-logo.png"
                   alt="EXPLORE IT SERVICES PVT LTD logo"
                   width={48}
                   height={48}
                   className="h-full w-full object-cover"
+                  placeholderClassName="bg-slate-300/60"
                 />
               </div>
               <span className="font-heading text-[13px] sm:text-sm leading-5 text-white tracking-wide uppercase">

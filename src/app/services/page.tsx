@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
+import SmartImage from "@/components/SmartImage";
 
 const services = [
   {
@@ -107,12 +107,13 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="relative mt-16 lg:mt-20 py-14 sm:py-16 lg:py-20 grain-overlay overflow-hidden">
-        <Image
+        <SmartImage
           src="/hero-serivce-.png"
           alt="Seva services team standing together outside office"
           fill
           priority
           className="object-cover object-center"
+          placeholderClassName="bg-slate-300/35 animate-pulse"
         />
         <div className="absolute inset-0 bg-linear-to-r from-slate-950/75 via-slate-900/55 to-slate-900/25" />
         <div className="absolute inset-0 pointer-events-none">
@@ -156,13 +157,14 @@ export default function ServicesPage() {
             transition={{ duration: 0.5 }}
             className="relative mb-10 overflow-hidden rounded-3xl border border-sand-200 shadow-sm"
           >
-            <Image
+            <SmartImage
               src="/servive-2.png"
               alt="Service advisor helping citizen with digital government services"
               width={1200}
               height={675}
               className="h-auto w-full object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 92vw, 1200px"
+              placeholderClassName="bg-slate-200/70 animate-pulse"
             />
           </motion.div>
 
