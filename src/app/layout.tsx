@@ -1,0 +1,41 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title:
+    "Explore IT Services Pvt Ltd — Government & Skill Development Services in Rajasthan",
+  description:
+    "Trusted provider of E-Mitra, RSLDC, PMKVY, and Commercial Vehicle Fitness services across India. Empowering communities through accessible government services and skill development.",
+  keywords:
+    "E-Mitra, RSLDC, PMKVY, Rajasthan services, skill development, vehicle fitness, government services",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
