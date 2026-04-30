@@ -126,7 +126,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-primary-100 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full mb-6 backdrop-blur-[2px]"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-pulse" />
-              Trusted across Rajasthan
+              Trusted across India
             </motion.span>
 
             <motion.h1
